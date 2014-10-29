@@ -1,6 +1,6 @@
 # AeroGear Push Notification Message Sender
 
-Service for sending push notification messages via AeroGear. See http://aerogear.org/docs/unifiedpush/push-message-format/ for more details
+Service for sending push notification messages via AeroGear. See [http://aerogear.org/docs/unifiedpush/push-message-format/](http://aerogear.org/docs/unifiedpush/push-message-format/) for more details
 
 # Environment Variables
 
