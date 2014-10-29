@@ -2,7 +2,7 @@
 
 Service for sending push notification messages via AeroGear. See [http://aerogear.org/docs/unifiedpush/push-message-format/](http://aerogear.org/docs/unifiedpush/push-message-format/) for more details
 
-# Environment Variables
+# Group Environment Variables
 
 The following Environment variables are supported/required by this service:
 
