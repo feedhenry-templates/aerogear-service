@@ -6,10 +6,10 @@ Service for sending push notification messages via AeroGear. See http://aerogear
 
 The following Environment variables are supported/required by this service:
 
-* AEROGEAR_SERVER_URL: Required - The URL of the AeroGear instance to use - e.g.  `https://aerogear.rhcloud.com/ag-push/`
-AEROGEAR_APPLICATION_ID: Required - The Unique Application Id of the AeroGear app - e.g.  `12345678-1234-1234-1234-1234567890ab`
-AEROGEAR_MASTER_SECRET: Required - The Master Secret Key of the AeroGear app - e.g. `12345678-1234-1234-1234-1234567890ab`
-AEROGEAR_TTL: Optional - The Time to Live value for the submitted notification - default value = 3600
+* `AEROGEAR_SERVER_URL`: Required - The URL of the AeroGear instance to use - e.g.  `https://aerogear.rhcloud.com/ag-push/`
+* `AEROGEAR_APPLICATION_ID`: Required - The Unique Application Id of the AeroGear app - e.g.  `12345678-1234-1234-1234-1234567890ab`
+* `AEROGEAR_MASTER_SECRET`: Required - The Master Secret Key of the AeroGear app - e.g. `12345678-1234-1234-1234-1234567890ab`
+* `AEROGEAR_TTL`: Optional - The Time to Live value for the submitted notification - default value = 3600
 
 
 # Group Send Message API
