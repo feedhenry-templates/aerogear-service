@@ -1,25 +1,56 @@
-# FeedHenry Hello World MBaaS Server
+# AeroGear Push Notification Message Sender
 
-This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for building your APIs. 
+Service for sending push notification messages via AeroGear. See http://aerogear.org/docs/unifiedpush/push-message-format/ for more details
 
-# Group Hello World API
+# Environment Variables
 
-# hello [/hello]
+The following Environment variables are supported/required by this service:
 
-'Hello world' endpoint.
+* AEROGEAR_SERVER_URL: Required - The URL of the AeroGear instance to use - e.g.  `https://aerogear.rhcloud.com/ag-push/`
+AEROGEAR_APPLICATION_ID: Required - The Unique Application Id of the AeroGear app - e.g.  `12345678-1234-1234-1234-1234567890ab`
+AEROGEAR_MASTER_SECRET: Required - The Master Secret Key of the AeroGear app - e.g. `12345678-1234-1234-1234-1234567890ab`
+AEROGEAR_TTL: Optional - The Time to Live value for the submitted notification - default value = 3600
 
-## hello [POST] 
 
-'Hello world' endpoint.
+# Group Send Message API
+
+# send [/send]
+
+'Send Message' endpoint.
+
+## send [POST]
+
+'Send Message' endpoint.
 
 + Request (application/json)
     + Body
             {
-              "hello": "world"
+              "message" : {
+                "alert": "The message to send (REQUIRED)",
+                "sound": "The sound to use on device when the message is received (OPTIONAL - default value = 'default')",
+                "badge": "Numeric value for the badge to use (OPTIONAL - default value = 2)",
+                "contentAvailable": "true|false - iOS specific argument to mark the payload as ‘content-available’ (OPTIONAL - default value = true),
+                "actionCategory": "iOS8 feature for interactive notifications (OPTIONAL - omitted if absent)",
+                "customKey": "some custom value (OPTIONAL - omitted if absent)",
+                "anotherCustomKey":"some other custom value (OPTIONAL - omitted if absent)"
+              }
             }
 
 + Response 200 (application/json)
     + Body
             {
-              "msg": "Hello world"
+              "status": "ok"
+            }
+
++ Response 400 (application/json)
+    + Body
+            {
+              "status": "error",
+              "message": [
+                {
+                  "param": "The parameter which caused the validation error",
+                  "msg": "The validation error message"
+                }
+                ...
+              ]
             }

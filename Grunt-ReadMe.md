@@ -50,5 +50,3 @@ The [grunt env](https://www.npmjs.org/package/grunt-env) plugin is included by d
 ```
 
 Alternatively you can load environment variables from a local file, see the `grunt env` [documentation](https://www.npmjs.org/package/grunt-env#using-external-files) for more details.
-
-

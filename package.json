@@ -1,12 +1,17 @@
 {
-  "name": "fh-app",
-  "version": "0.1.1",
+  "name": "aerogear-service",
+  "version": "0.1.0",
   "dependencies": {
-    "fh-mbaas-api" : "~4.5.0",
-    "request": "~2.40.0",
     "body-parser": "~1.0.2",
+    "connect-requestid": "^1.1.0",
+    "cors": "~2.2.0",
     "express": "~4.0.0",
-    "cors": "~2.2.0"
+    "express-validator": "~2.6.0",
+    "fh-mbaas-api": "~4.5.0",
+    "optval": "~1.0.1",
+    "request": "~2.40.0",
+    "unifiedpush-node-sender": "~0.7.0",
+    "winston": "^0.8.1"
   },
   "devDependencies": {
     "grunt-contrib-watch": "latest",
