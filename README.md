@@ -26,10 +26,10 @@ The following Environment variables are supported/required by this service:
     + Body
             {
               "message" : {
-                "alert": "The message to send (REQUIRED)",
-                "sound": "The sound to use on device when the message is received (OPTIONAL - default value = 'default')",
-                "badge": "Numeric value for the badge to use (OPTIONAL - default value = 2)",
-                "contentAvailable": "true|false - iOS specific argument to mark the payload as ‘content-available’ (OPTIONAL - default value = true)",
+                "alert": "The message to send (OPTIONAL - omitted if absent)",
+                "sound": "The sound to use on device when the message is received (OPTIONAL - omitted if absent)",
+                "badge": "Numeric value for the badge to use (OPTIONAL - omitted if absent)",
+                "contentAvailable": "true|false - iOS specific argument to mark the payload as ‘content-available’ (OPTIONAL - omitted if absent)",
                 "actionCategory": "iOS8 feature for interactive notifications (OPTIONAL - omitted if absent)",
                 "customKey": "some custom value (OPTIONAL - omitted if absent)",
                 "anotherCustomKey":"some other custom value (OPTIONAL - omitted if absent)"
