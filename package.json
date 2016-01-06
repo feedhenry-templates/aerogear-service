@@ -7,7 +7,7 @@
     "cors": "~2.2.0",
     "express": "~4.0.0",
     "express-validator": "~2.6.0",
-    "fh-mbaas-api": "5.7.8",
+    "fh-mbaas-api": "5.7.9",
     "optval": "~1.0.1",
     "request": "~2.40.0",
     "unifiedpush-node-sender": "~0.7.0",
