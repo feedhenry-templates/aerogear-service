@@ -7,7 +7,7 @@
     "cors": "~2.2.0",
     "express": "~4.0.0",
     "express-validator": "~2.6.0",
-    "fh-mbaas-api": "5.10.0",
+    "fh-mbaas-api": "5.11.0",
     "optval": "~1.0.1",
     "request": "~2.40.0",
     "unifiedpush-node-sender": "~0.7.0",
@@ -26,7 +26,7 @@
     "grunt-env": "~0.4.1",
     "load-grunt-tasks": "~0.4.0",
     "time-grunt": "~0.3.1",
-    "grunt-node-inspector": "~0.1.5",
+    "grunt-node-inspector": ">=0.2.0",
     "grunt-open": "~0.2.3",
     "grunt-plato": "~1.0.0"
   },
