@@ -30,7 +30,7 @@
     "grunt-open": "~0.2.3",
     "grunt-plato": "~1.0.0"
   },
-  "license": "mit",
+  "license": "Apache-2.0",
   "main": "application.js",
   "scripts": {
     "start": "node application.js"
