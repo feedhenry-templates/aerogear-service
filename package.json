@@ -2,16 +2,17 @@
   "name": "aerogear-service",
   "version": "0.1.0",
   "dependencies": {
-    "body-parser": "~1.0.2",
+    "body-parser": "~1.17.1",
     "connect-requestid": "^1.1.0",
     "cors": "~2.2.0",
-    "express": "~4.0.0",
-    "express-validator": "~2.6.0",
+    "express": "~4.16.0",
+    "express-validator": "~2.9.0",
     "fh-mbaas-api": "^6.1.1",
     "optval": "~1.0.1",
-    "request": "~2.40.0",
+    "request": "~2.81.0",
     "unifiedpush-node-sender": "^0.12.0",
-    "winston": "^0.8.1"
+    "winston": "^0.8.1",
+    "snyk": "^1.42.6"
   },
   "devDependencies": {
     "grunt-contrib-watch": "latest",
@@ -33,6 +34,9 @@
   "license": "Apache-2.0",
   "main": "application.js",
   "scripts": {
-    "start": "node application.js"
-  }
+    "start": "node application.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
